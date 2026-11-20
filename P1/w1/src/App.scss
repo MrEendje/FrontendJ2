@@ -1,0 +1,11 @@
+// Eigen kleuren: deze variabelen overschrijven de !default waardes van Bootstrap.
+// Ze moeten daarom vóór de import van Bootstrap staan.
+$primary: #9b59b6;
+$secondary: #1abc9c;
+
+// Bootstrap kiest zelf zwarte of witte tekst op een knop. Standaard moet het contrast
+// minimaal 4.5 zijn, wit op #1abc9c is ~2.4 en zou dus zwart worden. Met een lagere
+// grens krijgt de teal knop witte tekst, net als in het voorbeeld.
+$min-contrast-ratio: 2.3;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,27 +1,18 @@
-import { loremIpsum } from 'lorem-ipsum'
-
-const tekst = loremIpsum({ count: 3 })
+import './App.scss'
 
 function App() {
   return (
-    <div className="container mt-4">
+    <div className="container mt-5">
       <div className="row">
         <div className="col">
-          <div className="card">
-            <h5 className="card-header">Lorem ipsum dolor sit amet</h5>
-            <div className="card-body">
-              <p className="card-text small">{tekst}</p>
-            </div>
-          </div>
+          <button type="button" className="btn btn-primary w-100">
+            Primary color is #9b59b6
+          </button>
         </div>
-
         <div className="col">
-          <div className="card">
-            <h5 className="card-header">Lorem ipsum dolor sit amet</h5>
-            <div className="card-body">
-              <p className="card-text small">{tekst}</p>
-            </div>
-          </div>
+          <button type="button" className="btn btn-secondary w-100">
+            Secondary color is #1abc9c
+          </button>
         </div>
       </div>
     </div>
